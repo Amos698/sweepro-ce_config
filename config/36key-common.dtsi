@@ -24,7 +24,7 @@
                 &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &cmqus          &dtsmi          &kp CAPS
                                                 &encoder        &lt FUN TAB     &lt SYM SPACE   &lt SYM RET     &lt FUN BSPC    &encoder
              	>;
-            sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp UP DOWN>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp DOWN UP>;
 		    };
 
      	colemak_layer {
@@ -35,18 +35,18 @@
                 &kp Z           &kp X           &kp C           &kp D           &kp V           &kp K           &kp H           &cmqus          &dtsmi          &kp RC(B)
                                                 &encoder        &lt FUN TAB     &lt SYM SPACE   &lt SYM RET     &lt FUN BSPC    &encoder
              	>;
-            sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp UP DOWN>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp DOWN UP>;
 		    };
 
         number_layer {
             label = "NUM";
             bindings = <
-                &bt BT_NXT      &bt BT_PRV      &bt BT_CLR      &none           &none           &kp KP_PLUS     &kp KP_N7       &kp KP_N8       &kp KP_N9       &kp KP_MINUS
-                &kp LGUI        &kp LALT        &kp LSFT        &kp LCTL        &none           &kp KP_MULTIPLY &kp KP_N4       &kp KP_N5       &kp KP_N6       &kp KP_DIVIDE
-                &none           &none           &none           &none           &none           &kp KP_EQUAL    &kp KP_N1       &kp KP_N2       &kp KP_N3       &kp KP_DOT
-                                                &encoder        &none           &kp BSPC        &kp RET         &kp KP_N0       &kp C_MUTE
+                &bt BT_NXT      &bt BT_PRV      &bt BT_CLR      &none           &none           &kp KP_PLUS     &kp N7          &kp N8          &kp N9          &kp KP_MINUS
+                &kp LGUI        &kp LALT        &kp LSFT        &kp LCTL        &none           &kp KP_MULTIPLY &kp N4          &kp N5          &kp N6          &kp KP_DIVIDE
+                &none           &none           &none           &none           &none           &kp KP_EQUAL    &kp N1          &kp N2          &kp N3          &kp KP_DOT
+                                                &encoder        &none           &kp BSPC        &kp RET         &kp N0          &kp C_MUTE
             >;
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         symbol_layer {
@@ -57,18 +57,18 @@
                 &none           &none           &kp SLASH       &kp STAR        &kp BSLH        &kp HASH        &kp DLLR        &kp LBKT        &kp RBKT        &none  
                                                 &encoder        &none           &none           &none           &none           &kp C_MUTE
             >;
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
         
         function_layer {
             label = "FUN";
             bindings = <
                 &kp F1           &kp F2         &kp F3          &kp F4          &none           &none           &none           &none           &none           &none
-                &kp F5           &kp F6         &kp F7          &kp F8          &none           &none           &mt RCTL RIGHT  &mt RSFT DOWN   &mt RALT UP     &mt RGUI LEFT
+                &kp F5           &kp F6         &kp F7          &kp F8          &none           &kp LEFT        &mt RCTL DOWN  &mt RSFT UP   &mt RALT RIGHT     &kp RGUI
                 &kp F9           &kp F10        &kp F11         &kp F12         &none           &none           &none           &none           &none           &none
                                                 &none           &none           &none           &none           &none           &kp C_MUTE
             >;
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
    	};
 };
