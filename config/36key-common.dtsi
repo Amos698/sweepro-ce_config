@@ -41,7 +41,7 @@
         number_layer {
             label = "NUM";
             bindings = <
-                &bt BT_NXT      &bt BT_PRV      &bt BT_CLR      &none           &none           &kp KP_PLUS     &kp N7          &kp N8          &kp N9          &kp KP_MINUS
+                &none           &none           &none           &none           &none           &kp KP_PLUS     &kp N7          &kp N8          &kp N9          &kp KP_MINUS
                 &kp LGUI        &kp LALT        &kp LSFT        &kp LCTL        &none           &kp KP_MULTIPLY &kp N4          &kp N5          &kp N6          &kp KP_DIVIDE
                 &none           &none           &none           &none           &none           &kp KP_EQUAL    &kp N1          &kp N2          &kp N3          &kp KP_DOT
                                                 &encoder        &none           &kp BSPC        &kp RET         &kp N0          &kp C_MUTE
@@ -63,8 +63,8 @@
         function_layer {
             label = "FUN";
             bindings = <
-                &kp F1           &kp F2         &kp F3          &kp F4          &none           &none           &none           &none           &none           &none
-                &kp F5           &kp F6         &kp F7          &kp F8          &none           &kp LEFT        &mt RCTL DOWN  &mt RSFT UP   &mt RALT RIGHT     &kp RGUI
+                &kp F1           &kp F2         &kp F3          &kp F4          &none           &none           &none           &bt BT_PRV      &bt BT_NXT      &bt BT_CLR 
+                &kp F5           &kp F6         &kp F7          &kp F8          &none           &kp LEFT        &mt RCTL DOWN   &mt RSFT UP     &mt RALT RIGHT  &kp RGUI
                 &kp F9           &kp F10        &kp F11         &kp F12         &none           &none           &none           &none           &none           &none
                                                 &none           &none           &none           &none           &none           &kp C_MUTE
             >;
