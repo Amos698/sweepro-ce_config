@@ -17,8 +17,8 @@
       ZMK_MACRO(encoder, // for encoder switch press
         wait-ms = <0>;
         tap-ms  = <10>;
-        bindings = <&kp LS(I) &kp SPACE &kp A &kp M &kp SPACE &kp A &kp SPACE>
-        , <&kp E &kp N &kp C &kp O &kp D &kp E &kp R>;
+        bindings = <&kp LS(A) &kp M &kp O &kp S &kp N6 &kp N9>
+        , <&kp N8>;
       )
 
       ZMK_MACRO(nxt_tab,
@@ -64,18 +64,12 @@
     combos {
         compatible = "zmk,combos";
         // right hand 
-        combo_esc {
+        combo_resc {
             timeout-ms = <50>;
-            key-positions = <16 17>;
+            key-positions = <33 34>;
             bindings = <&kp ESC>;
         };
-        
-        combo_fullscreen {
-            timeout-ms = <50>;
-            key-positions = <25 26>;
-            bindings = <&kp F11>;
-        };
-        
+
         combo_rdelete {
             timeout-ms = <50>;
             key-positions = <15 16>;
@@ -83,6 +77,12 @@
         };
  
         // left hand
+        combo_lesc {
+            timeout-ms = <50>;
+            key-positions = <31 32>;
+            bindings = <&kp ESC>;
+        };
+
         combo_dblshft {
             timeout-ms = <50>;
             key-positions = <20 21>;
@@ -91,13 +91,13 @@
 
         combo_pgdn {
             timeout-ms = <50>;
-            key-positions = <22 23>;
+            key-positions = <23 24>;
             bindings = <&kp PG_DN>;
         };
  
         combo_pgup {
             timeout-ms = <50>;
-            key-positions = <2 3>;
+            key-positions = <3 4>;
             bindings = <&kp PG_UP>;
         };
 
@@ -121,12 +121,6 @@
         };
 
         // toggles
-        combo_capswd {
-            timeout-ms = <50>;
-            key-positions = <2 7>;
-            bindings = <&caps_word>;
-        };
-
         combo_lsym {
             timeout-ms = <50>;
             key-positions = <31 33>;
